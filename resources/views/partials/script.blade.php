@@ -1,4 +1,5 @@
 <!--begin::Script-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--begin::Third Party Plugin(OverlayScrollbars)-->
     <script
       src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
@@ -64,11 +65,11 @@
       });
     </script>
     <!-- apexcharts -->
-    <script
+    {{-- <script
       src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
       integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
       crossorigin="anonymous"
-    ></script>
+    ></script> --}}
     <!-- ChartJS -->
     <script>
       // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
@@ -129,16 +130,16 @@
       sales_chart.render();
     </script>
     <!-- jsvectormap -->
-    <script
+    {{-- <script
       src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"
       integrity="sha256-/t1nN2956BT869E6H4V1dnt0X5pAQHPytli+1nTZm2Y="
       crossorigin="anonymous"
-    ></script>
-    <script
+    ></script> --}}
+    {{-- <script
       src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"
       integrity="sha256-XPpPaZlU8S/HWf7FZLAncLg2SAkP8ScUTII89x9D3lY="
       crossorigin="anonymous"
-    ></script>
+    ></script> --}}
     <!-- jsvectormap -->
     <script>
       const visitorsData = {
@@ -246,4 +247,5 @@
       const sparkline3 = new ApexCharts(document.querySelector('#sparkline-3'), option_sparkline3);
       sparkline3.render();
     </script>
+    
     <!--end::Script-->

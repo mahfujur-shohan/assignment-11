@@ -28,8 +28,8 @@
           role="menu"
           data-accordion="false"
         >
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="{{ route('dashboard') }}" class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
               <i class="nav-icon bi bi-speedometer"></i>
               <p>
                 Dashboard
@@ -38,8 +38,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon bi bi-speedometer"></i>
+            <a href="{{ route('products.index') }}" class="nav-link {{ request()->routeIs('products.index') ? 'active' : '' }}">
+              <i class="nav-icon bi bi-box"></i>
               <p>
                 Products
                 
